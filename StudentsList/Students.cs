@@ -12,14 +12,17 @@
         public void AddStudent(string student)
         {
             students.Add(student);
+            Console.WriteLine($"Student {student} was added");
         }
 
         public void RemoveStudent(string student)
         {
             if(!students.Remove(student))
             {
-                Console.WriteLine("Student not found");
+                Console.WriteLine($"Student {student} not found");
+                return;
             }
+            Console.WriteLine($"Student {student} was removed");
         }
 
         public string GetStudent(string name)

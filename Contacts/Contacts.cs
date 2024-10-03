@@ -1,18 +1,24 @@
-﻿using System.Xml.Linq;
-
-namespace Contacts
+﻿namespace Contacts
 {
     public class Contacts
     {
         private Dictionary<string, long> contacts;
-        Contacts()
+        public Contacts()
         {
             contacts = new Dictionary<string, long>();
         }
 
-        public void Add(string name, int phoneNumber)
+        public void Add(string name, long phoneNumber)
         {
-            contacts.Add(name, phoneNumber);
+            try
+            {
+                contacts.Add(name, phoneNumber);
+            }
+            catch(ArgumentException)
+            {
+                Console.WriteLine("You already have this contact");
+                return;
+            }
             Console.WriteLine($"{phoneNumber} - {name} was added");
         }
 
@@ -24,13 +30,17 @@ namespace Contacts
                 contacts.Remove(name);
                 Console.WriteLine($"{phoneNumber} - {name} was deleted");
             }
+            else
+            {
+                Console.WriteLine($"{name} not found");
+            }
         }
 
         public long Get(string name)
         {
             long phoneNumber;
             if (!contacts.TryGetValue(name,out phoneNumber))
-                Console.WriteLine("Not found");
+                Console.WriteLine($"{name} not found");
             return phoneNumber;
         }
 

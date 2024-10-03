@@ -17,7 +17,7 @@
 
         public void Serve()
         {
-            Console.WriteLine($"Serving {buyers.Peek}...");
+            Console.WriteLine($"Serving {buyers.Peek()}...");
             buyers.Dequeue();
             Console.WriteLine("Next buyer!");
         }

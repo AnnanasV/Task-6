@@ -12,6 +12,7 @@ contacts.ShowAll();
 #endregion
 
 #region Students
+/*
 var students = new StudentsList.Students();
 students.AddStudent("John");
 students.AddStudent("Anna Vinda");
@@ -22,4 +23,16 @@ students.Count();
 Console.WriteLine(students.GetStudent("Anna"));
 students.RemoveStudent("Anna V");
 students.Count();
+*/
+#endregion
+
+#region Buyers
+var buyers = new BuyerQueue.Buyers();
+buyers.Add("Anastasia");
+buyers.Add("Jake");
+buyers.Add("Stanislav");
+
+buyers.Serve();
+
+buyers.Count();
 #endregion

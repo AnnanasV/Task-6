@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StudentsList", "StudentsLis
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BuyerQueue", "BuyerQueue\BuyerQueue.csproj", "{FA09839B-2B87-4B2F-A55C-397F23093360}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BooksHashTable", "BooksHashTable\BooksHashTable.csproj", "{97CF52FC-1DD5-40B8-A4E1-97A290388FE0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{FA09839B-2B87-4B2F-A55C-397F23093360}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA09839B-2B87-4B2F-A55C-397F23093360}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA09839B-2B87-4B2F-A55C-397F23093360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{97CF52FC-1DD5-40B8-A4E1-97A290388FE0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{97CF52FC-1DD5-40B8-A4E1-97A290388FE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{97CF52FC-1DD5-40B8-A4E1-97A290388FE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{97CF52FC-1DD5-40B8-A4E1-97A290388FE0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

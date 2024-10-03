@@ -9,6 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\BooksHashTable\BooksHashTable.csproj" />
     <ProjectReference Include="..\BuyerQueue\BuyerQueue.csproj" />
     <ProjectReference Include="..\Contacts\Contacts.csproj" />
     <ProjectReference Include="..\StudentsList\StudentsList.csproj" />

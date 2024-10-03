@@ -13,6 +13,11 @@ namespace BooksHashTable
 
         public void Add(int hash, string name)
         {
+            if (books.ContainsKey(hash))
+            {
+                Console.WriteLine("Book with this id already exist.");
+                return;
+            }
             books.Add(hash, name);
             Console.WriteLine($"Book \"{name}\" was added to the library");
         }

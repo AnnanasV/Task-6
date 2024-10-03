@@ -27,6 +27,7 @@ students.Count();
 #endregion
 
 #region Buyers
+/*
 var buyers = new BuyerQueue.Buyers();
 buyers.Add("Anastasia");
 buyers.Add("Jake");
@@ -35,4 +36,16 @@ buyers.Add("Stanislav");
 buyers.Serve();
 
 buyers.Count();
+*/
+#endregion
+
+#region Books
+var books = new BooksHashTable.Books();
+books.Add(0, "Book 1");
+books.Add(1, "Book 2");
+books.Add(2, "Book 3");
+
+books.Remove(3);
+books.GetBook(0);
+books.ShowAll();
 #endregion
